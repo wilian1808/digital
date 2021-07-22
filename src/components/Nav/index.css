@@ -1,0 +1,15 @@
+.nav {
+    display: block;
+}
+
+.nav__content {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.nav__link {
+    font-size: var(--size-title);
+    font-family: var(--font-content);
+    cursor: pointer;
+    color: var(--color-content);
+}

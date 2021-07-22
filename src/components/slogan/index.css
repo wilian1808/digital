@@ -1,0 +1,63 @@
+.slogan {
+    display: block;
+    width: 100%;
+}
+
+.slogan__title {
+    color: #3ab19b;
+    font-family: var(--font-title);
+    font-size: 10rem;
+    letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 930px) {
+    .slogan__title {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .slogan__title {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+}
+
+.slogan__description {
+    color: var(--color-content);
+    font-family: var(--font-content);
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 766px) {
+    .slogan__description {
+        text-align: center;
+    }
+}
+
+.slogan__button {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: var(--font-content);
+    background-color: #3ab19b;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 763px) {
+    .slogan__button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.slogan__button:active {
+    transform: scale(.99);
+}
