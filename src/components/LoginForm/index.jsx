@@ -10,6 +10,7 @@ export default function LoginForm () {
   const [loading, setLoading] = useState(false)
   const [response, setResponse] = useState('mensaje por defecto')
   const [user, setUser] = useState(undefined)
+  const [check, setCheck] = useState(false)
 
   const sendLogin = e => {
     e.preventDefault()
@@ -38,7 +39,12 @@ export default function LoginForm () {
         </label>
         <label className="login__label">
           <IconPassword className="login__icon"></IconPassword>
-          <input type="password" className="login__input" value={password} onChange={e => setPassword(e.target.value)} placeholder="Contraseña..." required/>
+          <input type={`${(check) ? 'text' : 'password'}`} className="login__input" value={password} onChange={e => setPassword(e.target.value)} placeholder="Contraseña..." required/>
+        </label>
+        <label htmlFor="ver" className="login__label login__check">
+          <span className={`checked ${(check) ? 'check_true' : ''}`}></span>
+          <input id="ver" type="checkbox" checked={check} onChange={() => setCheck(!check)} />
+          ver contraseña
         </label>
         <input
           type="submit"
