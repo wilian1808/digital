@@ -6,7 +6,7 @@
 .slogan__title {
     color: #3ab19b;
     font-family: var(--font-title);
-    font-size: 7rem;
+    font-size: 10rem;
     letter-spacing: .1rem;
 }
 
@@ -67,6 +67,7 @@
 }
 
 .slogan__image {
+    margin-left: 4rem;
     width: 22rem;
     animation: ss 1s ease-in-out;
     fill: #3ab19b;
