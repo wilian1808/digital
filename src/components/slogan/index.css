@@ -6,7 +6,7 @@
 .slogan__title {
     color: #3ab19b;
     font-family: var(--font-title);
-    font-size: 10rem;
+    font-size: 7rem;
     letter-spacing: .1rem;
 }
 
@@ -64,4 +64,23 @@
 
 .slogan__button:active {
     transform: scale(.99);
+}
+
+.slogan__image {
+    width: 22rem;
+    animation: ss 1s ease-in-out;
+    fill: #3ab19b;
+}
+
+@keyframes ss {
+    from {
+        opacity: 0;
+        transform: rotate(-360deg);
+        fill: transparent;
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+        fill: #3ab19b;
+    }
 }
