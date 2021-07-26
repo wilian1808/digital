@@ -15,8 +15,9 @@
 
 @media screen and (max-width: 765px) {
     .banner__content {
+        display: block;
+        margin-top: 5rem;
         justify-content: center;
-        row-gap: 2rem;
     }
 }
 

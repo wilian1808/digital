@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 930px) {
     .slogan__title {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 }
 
@@ -28,6 +28,13 @@
     font-family: var(--font-content);
     font-size: 1rem;
     margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 932px) {
+    .slogan__description {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 766px) {
@@ -71,6 +78,36 @@
     width: 22rem;
     animation: ss 1s ease-in-out;
     fill: #3ab19b;
+}
+
+@media screen and (max-width: 932px) {
+    .slogan__image {
+        width: 21rem;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .slogan__image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .slogan__title,
+    .slogan__description {
+        display: block;
+        text-align: center;
+    }
+
+    .slogan__description {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .slogan__image {
+        width: 100%;
+    }
 }
 
 @keyframes ss {

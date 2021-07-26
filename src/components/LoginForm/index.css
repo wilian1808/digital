@@ -10,6 +10,12 @@
     background-color: #ffffff;
 }
 
+@media screen and (max-width: 765px) {
+    .loginform {
+        margin-bottom: 2.5rem;
+    }
+}
+
 .login__label {
     display: flex;
     width: 100%;
