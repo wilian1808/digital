@@ -76,13 +76,13 @@
 .slogan__image {
     margin-left: 4rem;
     width: 22rem;
-    animation: ss 1s ease-in-out;
+    animation: ss .9s .6s forwards ease-in-out;
     fill: #3ab19b;
 }
 
 @media screen and (max-width: 932px) {
     .slogan__image {
-        width: 21rem;
+        width: 22rem;
         margin-left: 0;
     }
 }
@@ -112,13 +112,9 @@
 
 @keyframes ss {
     from {
-        opacity: 0;
         transform: rotate(-360deg);
-        fill: transparent;
     }
     to {
-        opacity: 1;
         transform: rotate(0deg);
-        fill: #3ab19b;
     }
 }
